@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">AppEllas</string>
+    <string name="description_logo">Logo AppEllas</string>
+    <string name="login_text">Login</string>
+    <string name="login_description">Please sign in to continue.</string>
+    <string name="hint_input_email">EMAIL</string>
+    <string name="hint_input_password">PASSWORD</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_forgot_text">Forgot your password?</string>
+    <string name="no_account_text">Don\'t have an account?</string>
+    <string name="login_signup_text">Sign up</string>
 </resources>

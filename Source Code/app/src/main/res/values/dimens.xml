@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_text_size">16sp</dimen>
+    <dimen name="default_gap">16dp</dimen>
+    <dimen name="maximum_gap">42dp</dimen>
+    <dimen name="medium_gap">24dp</dimen>
+    <dimen name="minimum_gap">8dp</dimen>
+    <dimen name="radius_input">20dp</dimen>
+</resources>
