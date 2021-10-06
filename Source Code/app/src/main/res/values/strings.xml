@@ -9,4 +9,5 @@
     <string name="login_forgot_text">Forgot your password?</string>
     <string name="no_account_text">Don\'t have an account?</string>
     <string name="login_signup_text">Sign up</string>
+    <string name="description_arrow_return">Flecha de regreso</string>
 </resources>
