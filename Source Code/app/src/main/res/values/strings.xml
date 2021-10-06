@@ -10,4 +10,10 @@
     <string name="no_account_text">Don\'t have an account?</string>
     <string name="login_signup_text">Sign up</string>
     <string name="description_arrow_return">Flecha de regreso</string>
+    <string name="register_text_tittle">Create Account</string>
+    <string name="register_description_tittle_text">Please fill the input below here</string>
+    <string name="hint_input_name">FULL NAME</string>
+    <string name="hint_input_phone">PHONE</string>
+    <string name="hint_input_confirm_password">CONFRIRM PASSWORD</string>
+    <string name="register_button_text">SIGN UP</string>
 </resources>

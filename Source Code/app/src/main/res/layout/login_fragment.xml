@@ -11,7 +11,7 @@
         android:id="@+id/logo_app"
         android:layout_width="175dp"
         android:layout_height="175dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:contentDescription="@string/description_logo"
         android:src="@mipmap/logo_login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:textSize="25sp"
+        android:textSize="@dimen/tittle_text_size"
         android:textColor="@color/white"
         android:text="@string/login_text"
         app:layout_constraintTop_toBottomOf="@id/logo_app"
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/hint_input_password"
         android:textColorHint="#787575"
-        android:layout_marginTop="@dimen/medium_gap"
+        android:layout_marginTop="20dp"
         app:boxCornerRadiusTopEnd="@dimen/radius_input"
         app:boxCornerRadiusTopStart="@dimen/radius_input"
         app:boxCornerRadiusBottomStart="@dimen/radius_input"
@@ -103,6 +103,8 @@
         android:layout_height="65dp"
         android:backgroundTint="#1E1B30"
         android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="@dimen/default_text_size"
         android:text="@string/login_button_text"
         android:textColor="#FFC58F"
         app:strokeColor="#FFC58F"
@@ -128,14 +130,15 @@
         android:id="@+id/login_no_accoun_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="-50dp"
-        android:text="@string/no_account_text"
         android:textColor="#787575"
         android:fontFamily="@font/poppins_semibold"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/no_account_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/login_signup_text"
         app:layout_constraintTop_toBottomOf="@id/login_forgot_text"/>
+
 
     <TextView
         android:id="@+id/login_signup_text"
@@ -148,5 +151,6 @@
         app:layout_constraintTop_toTopOf="@id/login_no_accoun_text"
         app:layout_constraintBottom_toBottomOf="@id/login_no_accoun_text"
         app:layout_constraintStart_toEndOf="@id/login_no_accoun_text"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
