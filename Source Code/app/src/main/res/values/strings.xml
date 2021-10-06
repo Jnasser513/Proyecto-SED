@@ -24,4 +24,12 @@
     <string name="description_alert_button">Alert Button</string>
     <string name="bottom_menu_settings_title">Settings</string>
     <string name="bottom_menu_profile_title">Profile</string>
+    <string name="description_logo_blog">Logo blog</string>
+    <string name="homepage_blog_description">Blog informativo</string>
+    <string name="description_logo_advisory">logo asesoria</string>
+    <string name="homepage_advisory_description">Asesoria</string>
+    <string name="description_logo_map">map logo</string>
+    <string name="homepage_map_description">Mapa de informacion</string>
+    <string name="description_logo_information_page">information page logo</string>
+    <string name="homepage_information_page_description">Pagina de informacion</string>
 </resources>
