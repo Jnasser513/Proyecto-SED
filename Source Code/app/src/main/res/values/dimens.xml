@@ -2,11 +2,12 @@
 <resources>
     <dimen name="default_text_size">16sp</dimen>
     <dimen name="default_gap">16dp</dimen>
-    <dimen name="maximum_gap">42dp</dimen>
+    <dimen name="maximum_gap">40dp</dimen>
     <dimen name="medium_gap">24dp</dimen>
     <dimen name="minimum_gap">8dp</dimen>
     <dimen name="radius_input">20dp</dimen>
     <dimen name="minimum_text_size">12sp</dimen>
     <dimen name="tittle_text_size">26sp</dimen>
     <dimen name="input_gap">10dp</dimen>
+    <dimen name="button_radius">30dp</dimen>
 </resources>

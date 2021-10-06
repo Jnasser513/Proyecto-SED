@@ -16,4 +16,9 @@
     <string name="hint_input_phone">PHONE</string>
     <string name="hint_input_confirm_password">CONFRIRM PASSWORD</string>
     <string name="register_button_text">SIGN UP</string>
+    <string name="register_have_account_text">Already have a account?</string>
+    <string name="recovery_text_tittle">Change Password</string>
+    <string name="recovery_description_tittle_text">Fill in the spaces to change the password</string>
+    <string name="recovery_button_text">Change Password</string>
+    <string name="recovery_return_login_text">Return to login</string>
 </resources>
