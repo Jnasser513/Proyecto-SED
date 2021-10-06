@@ -21,4 +21,7 @@
     <string name="recovery_description_tittle_text">Fill in the spaces to change the password</string>
     <string name="recovery_button_text">Change Password</string>
     <string name="recovery_return_login_text">Return to login</string>
+    <string name="description_alert_button">Alert Button</string>
+    <string name="bottom_menu_settings_title">Settings</string>
+    <string name="bottom_menu_profile_title">Profile</string>
 </resources>
