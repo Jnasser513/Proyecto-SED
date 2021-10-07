@@ -18,6 +18,7 @@
         <entry key="app/src/main/res/drawable/ic_user.xml" value="0.278125" />
         <entry key="app/src/main/res/font/poppins_bold_700.xml" value="0.2462962962962963" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25679347826086957" />
+        <entry key="app/src/main/res/layout/blog_fragment.xml" value="0.24864130434782608" />
         <entry key="app/src/main/res/layout/bottom_app_bar.xml" value="0.25271739130434784" />
         <entry key="app/src/main/res/layout/homepage_fragment.xml" value="0.25271739130434784" />
         <entry key="app/src/main/res/layout/init_fragment.xml" value="0.18653948065712772" />
@@ -26,6 +27,7 @@
         <entry key="app/src/main/res/layout/register_fragment.xml" value="0.2608695652173913" />
         <entry key="app/src/main/res/menu-v26/bottom_app_bar.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/menu/bottom_app_bar.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.26197916666666665" />
       </map>
     </option>
   </component>
