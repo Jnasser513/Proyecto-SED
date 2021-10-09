@@ -32,4 +32,10 @@
     <string name="homepage_map_description">Mapa de informacion</string>
     <string name="description_logo_information_page">information page logo</string>
     <string name="homepage_information_page_description">Pagina de informacion</string>
+    <string name="bottom_navigtaion_blog_title">Blog</string>
+    <string name="bottom_navigation_advisory_title">Advisory</string>
+    <string name="bottom_navigation_map_title">Map</string>
+    <string name="bottom_navigation_information_title">Information</string>
+    <string name="blog_title">Blogs</string>
+    <string name="blog_title_description">Learn about other people\'s stories</string>
 </resources>

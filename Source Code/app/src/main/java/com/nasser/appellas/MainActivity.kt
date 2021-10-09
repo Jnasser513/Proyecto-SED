@@ -6,6 +6,6 @@ import android.os.Bundle
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.homepage_fragment)
+        setContentView(R.layout.blog_fragment)
     }
 }

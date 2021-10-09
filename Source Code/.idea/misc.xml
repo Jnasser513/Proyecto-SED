@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2462962962962963" />
+        <entry key="app/src/main/res/drawable/blog_card_view_style.xml" value="0.25833333333333336" />
         <entry key="app/src/main/res/drawable/card_style.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.278125" />
+        <entry key="app/src/main/res/drawable/circle_secondary.xml" value="0.22685185185185186" />
+        <entry key="app/src/main/res/drawable/header_style.xml" value="0.22685185185185186" />
         <entry key="app/src/main/res/drawable/ic_arrow.xml" value="0.278125" />
         <entry key="app/src/main/res/drawable/ic_blogging.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/drawable/ic_consulta.xml" value="0.24444444444444444" />
@@ -16,18 +19,23 @@
         <entry key="app/src/main/res/drawable/ic_mapa.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/drawable/ic_siren.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/drawable/ic_user.xml" value="0.278125" />
+        <entry key="app/src/main/res/drawable/top.xml" value="0.22685185185185186" />
         <entry key="app/src/main/res/font/poppins_bold_700.xml" value="0.2462962962962963" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25679347826086957" />
-        <entry key="app/src/main/res/layout/blog_fragment.xml" value="0.24864130434782608" />
+        <entry key="app/src/main/res/layout/blog_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/bottom_app_bar.xml" value="0.25271739130434784" />
+        <entry key="app/src/main/res/layout/bottom_navigation_menu.xml" value="0.22509057971014493" />
+        <entry key="app/src/main/res/layout/card_blog_item.xml" value="0.22010869565217392" />
         <entry key="app/src/main/res/layout/homepage_fragment.xml" value="0.25271739130434784" />
         <entry key="app/src/main/res/layout/init_fragment.xml" value="0.18653948065712772" />
         <entry key="app/src/main/res/layout/login_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/recovery_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/register_fragment.xml" value="0.2608695652173913" />
         <entry key="app/src/main/res/menu-v26/bottom_app_bar.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/menu-v26/bottom_navigation_menu.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/menu/bottom_app_bar.xml" value="0.26197916666666665" />
-        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/menu/bottom_navigation_bar.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25" />
       </map>
     </option>
   </component>

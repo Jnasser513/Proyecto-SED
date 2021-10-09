@@ -1,20 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary_color">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:menu="@menu/bottom_navigation_menu" />
+            android:layout_height="180dp"
+            android:background="@drawable/header_style"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </LinearLayout>
+                <View
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="-120dp"
+                    android:layout_marginStart="-90dp"
+                    android:background="@drawable/circle_secondary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginEnd="-90dp"
+                    android:layout_marginBottom="-120dp"
+                    android:background="@drawable/circle_secondary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/blog_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/maximum_gap"
+                    android:text="@string/blog_title"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="36sp"
+                    android:textColor="@color/primary_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="-8dp"
+                    android:text="@string/blog_title_description"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/default_text_size"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/blog_title"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="@dimen/maximum_gap"
+            app:cardBackgroundColor="@android:color/transparent"
+            android:layout_marginEnd="@dimen/maximum_gap"
+            android:layout_marginTop="@dimen/medium_gap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_container">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/blog_card_view_style">
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <include
+            android:id="@+id/bottom_navigation"
+            layout="@layout/bottom_navigation_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
