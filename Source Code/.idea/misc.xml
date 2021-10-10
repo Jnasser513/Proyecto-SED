@@ -20,6 +20,7 @@
         <entry key="app/src/main/res/drawable/ic_siren.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/drawable/ic_user.xml" value="0.278125" />
         <entry key="app/src/main/res/drawable/img_card_view_style.xml" value="0.25462962962962965" />
+        <entry key="app/src/main/res/drawable/return_button_style.xml" value="0.25462962962962965" />
         <entry key="app/src/main/res/drawable/top.xml" value="0.22685185185185186" />
         <entry key="app/src/main/res/font/poppins_bold_700.xml" value="0.2462962962962963" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25679347826086957" />

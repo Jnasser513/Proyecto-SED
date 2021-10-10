@@ -38,4 +38,6 @@
     <string name="bottom_navigation_information_title">Information</string>
     <string name="blog_title">Blogs</string>
     <string name="blog_title_description">Learn about other people\'s stories</string>
+    <string name="description_return_arrow">flecha de regreso</string>
+    <string name="description_floating_action_new">Add button</string>
 </resources>
