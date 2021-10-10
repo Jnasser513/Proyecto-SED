@@ -40,4 +40,12 @@
     <string name="blog_title_description">Learn about other people\'s stories</string>
     <string name="description_return_arrow">flecha de regreso</string>
     <string name="description_floating_action_new">Add button</string>
+    <string name="create_blog_title">Create Blog</string>
+    <string name="create_blog_title_description">Tell us about your story</string>
+    <string name="create_blog_hint_title">Title</string>
+    <string name="create_blog_hint_subtitle">Subtitle</string>
+    <string name="create_blog_hint_description">Description</string>
+    <string name="description_blog_image">Blog image</string>
+    <string name="create_blog_upload_text">Upload</string>
+    <string name="create_blog_share_button_text">Share your experience</string>
 </resources>
