@@ -8,6 +8,7 @@
     <dimen name="radius_input">20dp</dimen>
     <dimen name="minimum_text_size">12sp</dimen>
     <dimen name="tittle_text_size">26sp</dimen>
+    <dimen name="maximum_text_size">32sp</dimen>
     <dimen name="input_gap">10dp</dimen>
     <dimen name="button_radius">30dp</dimen>
     <dimen name="homecard_radius">8dp</dimen>

@@ -62,27 +62,11 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.google.android.material.card.MaterialCardView
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginStart="@dimen/maximum_gap"
-            app:cardBackgroundColor="@android:color/transparent"
-            android:layout_marginEnd="@dimen/maximum_gap"
-            android:layout_marginTop="@dimen/medium_gap"
+            android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/header_container">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/blog_card_view_style">
-
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </com.google.android.material.card.MaterialCardView>
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <include
             android:id="@+id/bottom_navigation"
