@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/header_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="-120dp"
+            android:layout_marginStart="-90dp"
+            android:backgroundTint="#FFC58F"
+            app:cardElevation="@dimen/default_gap"
+            app:cardCornerRadius="125dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_secondary"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginEnd="-90dp"
+            android:layout_marginBottom="-120dp"
+            android:backgroundTint="#FFC58F"
+            app:cardElevation="@dimen/default_gap"
+            app:cardCornerRadius="125dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_secondary"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/advisory_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/maximum_gap"
+            android:text="@string/advisory_title"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="36sp"
+            android:textColor="@color/primary_color"
+            android:elevation="20dp"
+            android:shadowColor="@color/primary_color"
+            android:shadowDy="10"
+            android:shadowDx="10"
+            android:shadowRadius="15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-8dp"
+            android:text="@string/advisory_title_description"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/default_text_size"
+            android:textColor="@color/white"
+            android:elevation="20dp"
+            android:shadowColor="@color/primary_color"
+            android:shadowDy="10"
+            android:shadowDx="10"
+            android:shadowRadius="15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/advisory_title"/>
+
+        <ImageButton
+            android:id="@+id/action_return"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_arrow"
+            android:background="@drawable/return_button_style"
+            android:layout_marginTop="@dimen/default_gap"
+            android:layout_marginStart="@dimen/default_gap"
+            android:contentDescription="@string/description_return_arrow"
+            android:elevation="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/advisory_card_view_legal"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:backgroundTint="@color/primary_color"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="@dimen/default_gap"
+        app:rippleColor="@color/secondary_color"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/secondary_color"
+        app:cardCornerRadius="@dimen/homecard_radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/advisory_legal_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ley"
+                android:contentDescription="@string/description_logo_legal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/advisory_legal_description"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/secondary_color"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/advisory_card_view_doctors"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:backgroundTint="@color/primary_color"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="@dimen/default_gap"
+        app:rippleColor="@color/secondary_color"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/secondary_color"
+        app:cardCornerRadius="@dimen/homecard_radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/advisory_card_view_legal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/advisory_doctors_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_estetoscopio"
+                android:contentDescription="@string/description_logo_doctors" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/advisory_doctors_description"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/secondary_color"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/advisory_card_view_psychologist"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:backgroundTint="@color/primary_color"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="@dimen/default_gap"
+        app:rippleColor="@color/secondary_color"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/secondary_color"
+        app:cardCornerRadius="@dimen/homecard_radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/advisory_card_view_doctors">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/advisory_psychologist_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_psicologo"
+                android:contentDescription="@string/description_logo_psychologist" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/advisory_psychologist_description"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/secondary_color"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <include
+        android:id="@+id/advisory_bottom_app_bar"
+        layout="@layout/bottom_app_bar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

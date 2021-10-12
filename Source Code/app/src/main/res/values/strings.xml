@@ -48,4 +48,13 @@
     <string name="description_blog_image">Blog image</string>
     <string name="create_blog_upload_text">Upload</string>
     <string name="create_blog_share_button_text">Share your experience</string>
+    <string name="description_blog_imageview">Blog Image</string>
+    <string name="advisory_title">Advisory</string>
+    <string name="advisory_title_description">Get help from an expert</string>
+    <string name="description_logo_legal">legal_button</string>
+    <string name="advisory_legal_description">Legal</string>
+    <string name="description_logo_doctors">doctors_button</string>
+    <string name="advisory_doctors_description">Doctors</string>
+    <string name="description_logo_psychologist">psychologist button</string>
+    <string name="advisory_psychologist_description">Psychologist</string>
 </resources>
