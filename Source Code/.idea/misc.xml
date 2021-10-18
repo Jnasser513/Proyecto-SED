@@ -18,8 +18,10 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2462962962962963" />
         <entry key="app/src/main/res/drawable/ic_ley.xml" value="0.2657407407407407" />
         <entry key="app/src/main/res/drawable/ic_list.xml" value="0.24444444444444444" />
+        <entry key="app/src/main/res/drawable/ic_llamada_telefonica.xml" value="0.262037037037037" />
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.278125" />
         <entry key="app/src/main/res/drawable/ic_mapa.xml" value="0.24444444444444444" />
+        <entry key="app/src/main/res/drawable/ic_message.xml" value="0.25925925925925924" />
         <entry key="app/src/main/res/drawable/ic_psicologo.xml" value="0.2657407407407407" />
         <entry key="app/src/main/res/drawable/ic_siren.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/drawable/ic_user.xml" value="0.278125" />
@@ -34,6 +36,7 @@
         <entry key="app/src/main/res/layout/blog_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/bottom_app_bar.xml" value="0.25271739130434784" />
         <entry key="app/src/main/res/layout/bottom_navigation_menu.xml" value="0.22509057971014493" />
+        <entry key="app/src/main/res/layout/card_advisory_item.xml" value="0.23097826086956522" />
         <entry key="app/src/main/res/layout/card_blog_item.xml" value="0.22010869565217392" />
         <entry key="app/src/main/res/layout/create_blog_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/header.xml" value="0.22010869565217392" />

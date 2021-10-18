@@ -57,4 +57,8 @@
     <string name="advisory_doctors_description">Doctors</string>
     <string name="description_logo_psychologist">psychologist button</string>
     <string name="advisory_psychologist_description">Psychologist</string>
+    <string name="description_img_advisory">Advisor photo</string>
+    <string name="advisory_legal_contact_title_text">Legal contacts</string>
+    <string name="advisory_medical_contact_title_text">Medical contacts</string>
+    <string name="advisory_psychologist_contact_title_text">Psychologist contacts</string>
 </resources>
