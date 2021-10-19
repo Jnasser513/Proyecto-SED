@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/circle.xml" value="0.278125" />
         <entry key="app/src/main/res/drawable/circle_primary.xml" value="0.25092592592592594" />
         <entry key="app/src/main/res/drawable/circle_secondary.xml" value="0.22685185185185186" />
+        <entry key="app/src/main/res/drawable/container_map_fragment.xml" value="0.25555555555555554" />
         <entry key="app/src/main/res/drawable/header_style.xml" value="0.22685185185185186" />
         <entry key="app/src/main/res/drawable/ic_arrow.xml" value="0.278125" />
         <entry key="app/src/main/res/drawable/ic_blogging.xml" value="0.24444444444444444" />
@@ -41,6 +42,7 @@
         <entry key="app/src/main/res/layout/create_blog_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/header.xml" value="0.22010869565217392" />
         <entry key="app/src/main/res/layout/homepage_fragment.xml" value="0.25271739130434784" />
+        <entry key="app/src/main/res/layout/informative_map_fragment.xml" value="0.2259963768115942" />
         <entry key="app/src/main/res/layout/init_fragment.xml" value="0.18653948065712772" />
         <entry key="app/src/main/res/layout/login_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/recovery_fragment.xml" value="0.25" />

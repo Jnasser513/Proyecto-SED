@@ -61,4 +61,6 @@
     <string name="advisory_legal_contact_title_text">Legal contacts</string>
     <string name="advisory_medical_contact_title_text">Medical contacts</string>
     <string name="advisory_psychologist_contact_title_text">Psychologist contacts</string>
+    <string name="informative_map_title">Informative Map</string>
+    <string name="bottom_navigation_user_title">Profile</string>
 </resources>
