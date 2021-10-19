@@ -63,4 +63,7 @@
     <string name="advisory_psychologist_contact_title_text">Psychologist contacts</string>
     <string name="informative_map_title">Informative Map</string>
     <string name="bottom_navigation_user_title">Profile</string>
+    <string name="description_profile_photo">profile photo</string>
+    <string name="profile_save_changes_button_text">Save Changes</string>
+    <string name="profile_delete_button_text">Delete account</string>
 </resources>
