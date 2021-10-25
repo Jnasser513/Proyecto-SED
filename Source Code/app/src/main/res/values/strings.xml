@@ -66,4 +66,14 @@
     <string name="description_profile_photo">profile photo</string>
     <string name="profile_save_changes_button_text">Save Changes</string>
     <string name="profile_delete_button_text">Delete account</string>
+    <string name="description_manage_accounts_admin">Administrar cuentas</string>
+    <string name="homepage_admin_manage">Administrar cuentas</string>
+    <string name="homepage_admin_map_description">Mapa de emergencia</string>
+    <string name="description_logo_report">Report Image</string>
+    <string name="homepage_admin_report_description">Control de usuarios</string>
+    <string name="manage_accounts_title">Manage accounts</string>
+    <string name="blog_tab">Blog</string>
+    <string name="advisory_tab">Advisory</string>
+    <string name="map_tab">Map</string>
+    <string name="information_tab">Information</string>
 </resources>

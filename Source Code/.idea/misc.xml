@@ -22,9 +22,11 @@
         <entry key="app/src/main/res/drawable/ic_list.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/drawable/ic_llamada_telefonica.xml" value="0.262037037037037" />
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.278125" />
+        <entry key="app/src/main/res/drawable/ic_manage_accounts.xml" value="0.26944444444444443" />
         <entry key="app/src/main/res/drawable/ic_mapa.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/drawable/ic_message.xml" value="0.25925925925925924" />
         <entry key="app/src/main/res/drawable/ic_psicologo.xml" value="0.2657407407407407" />
+        <entry key="app/src/main/res/drawable/ic_reporte.xml" value="0.26944444444444443" />
         <entry key="app/src/main/res/drawable/ic_siren.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/drawable/ic_user.xml" value="0.278125" />
         <entry key="app/src/main/res/drawable/img_card_view_style.xml" value="0.25462962962962965" />
@@ -36,18 +38,22 @@
         <entry key="app/src/main/res/font/poppins_bold_700.xml" value="0.2462962962962963" />
         <entry key="app/src/main/res/layout-v28/create_blog_fragment.xml" value="0.24048913043478262" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25679347826086957" />
+        <entry key="app/src/main/res/layout/admin_bottom_navigation_tab.xml" value="0.24094202898550723" />
+        <entry key="app/src/main/res/layout/admin_homepage_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/advisory_fragment.xml" value="0.23596014492753623" />
         <entry key="app/src/main/res/layout/blog_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/bottom_app_bar.xml" value="0.25271739130434784" />
-        <entry key="app/src/main/res/layout/bottom_navigation_menu.xml" value="0.22509057971014493" />
+        <entry key="app/src/main/res/layout/bottom_navigation_menu.xml" value="0.25" />
         <entry key="app/src/main/res/layout/card_advisory_item.xml" value="0.23097826086956522" />
         <entry key="app/src/main/res/layout/card_blog_item.xml" value="0.22010869565217392" />
         <entry key="app/src/main/res/layout/create_blog_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/header.xml" value="0.22010869565217392" />
         <entry key="app/src/main/res/layout/homepage_fragment.xml" value="0.25271739130434784" />
         <entry key="app/src/main/res/layout/informative_map_fragment.xml" value="0.2259963768115942" />
+        <entry key="app/src/main/res/layout/informative_page_fragment.xml" value="0.23641304347826086" />
         <entry key="app/src/main/res/layout/init_fragment.xml" value="0.18653948065712772" />
         <entry key="app/src/main/res/layout/login_fragment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/manage_accounts_fragment.xml" value="0.24094202898550723" />
         <entry key="app/src/main/res/layout/recovery_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/register_fragment.xml" value="0.2608695652173913" />
         <entry key="app/src/main/res/layout/user_profile_fragment.xml" value="0.2210144927536232" />
@@ -56,6 +62,7 @@
         <entry key="app/src/main/res/menu/bottom_app_bar.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/menu/bottom_navigation_bar.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15104166666666666" />
       </map>
     </option>
   </component>

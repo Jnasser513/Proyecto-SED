@@ -178,8 +178,4 @@
         app:layout_constraintTop_toBottomOf="@id/advisory_psychologist_contact_title"
         tools:listitem="@layout/card_advisory_item" />
 
-    <include
-        android:id="@+id/advisory_bottom_app_bar"
-        layout="@layout/bottom_app_bar" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/homepage_logo"
+        android:contentDescription="@string/description_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/logo_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/homepage_card_view_blog"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/default_gap"
+        android:backgroundTint="@color/primary_color"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="@dimen/default_gap"
+        app:rippleColor="@color/secondary_color"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/secondary_color"
+        app:cardCornerRadius="@dimen/homecard_radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homepage_logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/homepage_blog_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_manage_accounts"
+                android:contentDescription="@string/description_manage_accounts_admin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage_admin_manage"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/secondary_color"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/homepage_card_view_advisory"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:backgroundTint="@color/primary_color"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="@dimen/default_gap"
+        app:rippleColor="@color/secondary_color"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/secondary_color"
+        app:cardCornerRadius="@dimen/homecard_radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homepage_card_view_blog">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/homepage_advisory_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mapa"
+                android:contentDescription="@string/description_logo_map" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage_admin_map_description"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/secondary_color"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/homepage_card_view_map"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:backgroundTint="@color/primary_color"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="@dimen/default_gap"
+        app:rippleColor="@color/secondary_color"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/secondary_color"
+        app:cardCornerRadius="@dimen/homecard_radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homepage_card_view_advisory">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/homepage_map_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_reporte"
+                android:contentDescription="@string/description_logo_report" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage_admin_report_description"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/secondary_color"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <include
+        android:id="@+id/homepage_bottom_app_bar"
+        layout="@layout/bottom_app_bar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

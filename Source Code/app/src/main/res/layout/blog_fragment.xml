@@ -116,17 +116,13 @@
             android:id="@+id/floating_action_new"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="70dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="@dimen/minimum_gap"
+            android:layout_marginEnd="@dimen/minimum_gap"
             android:backgroundTint="#ABF2EC"
             android:src="@drawable/ic_add"
             android:contentDescription="@string/description_floating_action_new"
             app:maxImageSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
-
-        <include
-            android:id="@+id/bottom_navigation"
-            layout="@layout/bottom_navigation_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

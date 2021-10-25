@@ -270,7 +270,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <include
-        android:id="bottom_navigation"
+        android:id="@+id/bottom_navigation"
         layout="@layout/bottom_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
