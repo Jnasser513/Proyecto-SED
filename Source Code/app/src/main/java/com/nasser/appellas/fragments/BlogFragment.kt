@@ -24,16 +24,10 @@ class BlogFragment: Fragment() {
         super.onCreateView(inflater, container, savedInstanceState)
         mBinding = BlogFragmentBinding.inflate(inflater, container, false)
 
-        setUpListeners()
-
         return mBinding.root
     }
 
-    private fun setUpListeners() {
-        setUpNavigation()
-    }
-
-    private fun setUpNavigation() {
+    /*private fun setUpNavigation() {
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when(item.itemId) {
                 R.id.page_blog -> {
@@ -62,7 +56,7 @@ class BlogFragment: Fragment() {
                 }
             }
         }
-    }
+    }*/
 
     /*
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

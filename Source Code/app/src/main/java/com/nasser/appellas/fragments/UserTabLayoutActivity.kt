@@ -8,7 +8,7 @@ import com.nasser.appellas.R
 import com.nasser.appellas.databinding.BottomNavigationMenuBinding
 import com.nasser.appellas.fragments.adapters.UserViewPagerAdapter
 
-class UserTabLayoutFragment: AppCompatActivity() {
+class UserTabLayoutActivity: AppCompatActivity() {
 
     private lateinit var mBinding: BottomNavigationMenuBinding
 

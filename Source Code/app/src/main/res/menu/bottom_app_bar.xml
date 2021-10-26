@@ -5,6 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/ic_list"
+        android:iconTint="@color/primary_color"
+        android:title="Menu"
+        app:showAsAction="ifRoom"/>
+
+    <item
         android:id="@+id/action_profile"
         android:orderInCategory="100"
         android:icon="@drawable/ic_user"
