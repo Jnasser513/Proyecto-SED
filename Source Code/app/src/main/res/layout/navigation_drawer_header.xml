@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="@dimen/default_gap"
+    android:layout_marginTop="@dimen/default_gap"
+    android:layout_marginEnd="@dimen/default_gap"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/nasser" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingTop="@dimen/minimum_gap"
+        android:text="Jose Nasser"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/default_text_size" />
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="josenasser2009@gmail.com"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="@dimen/minimum_text_size"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:background="#BDB8B8"/>
+
+</LinearLayout>

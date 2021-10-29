@@ -1,10 +1,10 @@
 package com.nasser.appellas.fragments
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.nasser.appellas.R
 import com.nasser.appellas.databinding.BottomAppBarBinding
 
@@ -17,25 +17,53 @@ class BottomAppBarActivity: AppCompatActivity() {
         mBinding = BottomAppBarBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
-        setSupportActionBar(mBinding.bottomAppBar)
+        setUpListeners()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        super.onCreateOptionsMenu(menu)
-        menuInflater.inflate(R.menu.bottom_app_bar, menu)
-        return true
+    private fun setUpListeners() {
+        setUpNavigationDrawerListener()
+        setUpMenuClickListener()
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId) {
-            R.id.settings
-        }
-        return super.onOptionsItemSelected(item)
-    }
+    private fun setUpNavigationDrawerListener() {
+        val bottomSheetBehavior = BottomSheetBehavior.from(mBinding.navigationView)
+        bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
 
-    private fun setUpNavigationListener() {
         mBinding.bottomAppBar.setNavigationOnClickListener {
-            
+            bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+        }
+
+        mBinding.navigationView.setNavigationItemSelectedListener { menuItem ->
+            // Handle menu item selected
+            menuItem.isChecked = true
+            when(menuItem.itemId) {
+                R.id.settings -> {
+                    Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
+            true
+        }
+
+        mBinding.scrim1.setOnClickListener {
+            bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+
+        bottomSheetBehavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
+            override fun onSlide(bottomSheet: View, slideOffset: Float) {
+            }
+            override fun onStateChanged(bottomSheet: View, newState: Int) {
+            }
+        })
+    }
+
+    private fun setUpMenuClickListener() {
+        mBinding.bottomAppBar.setOnMenuItemClickListener {
+            when(it.itemId) {
+                R.id.action_profile -> Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show()
+            }
+            true
         }
     }
 

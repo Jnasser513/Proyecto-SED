@@ -76,4 +76,6 @@
     <string name="advisory_tab">Advisory</string>
     <string name="map_tab">Map</string>
     <string name="information_tab">Information</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

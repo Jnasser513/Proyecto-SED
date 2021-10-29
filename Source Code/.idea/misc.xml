@@ -55,6 +55,8 @@
         <entry key="app/src/main/res/layout/init_fragment.xml" value="0.18653948065712772" />
         <entry key="app/src/main/res/layout/login_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/manage_accounts_fragment.xml" value="0.24094202898550723" />
+        <entry key="app/src/main/res/layout/navigation_drawer_header.xml" value="0.21603260869565216" />
+        <entry key="app/src/main/res/layout/prueba.xml" value="0.2105978260869565" />
         <entry key="app/src/main/res/layout/recovery_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/register_fragment.xml" value="0.2608695652173913" />
         <entry key="app/src/main/res/layout/user_profile_fragment.xml" value="0.2210144927536232" />
