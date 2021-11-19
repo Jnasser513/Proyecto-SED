@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "user_table")
 data class User(
     @PrimaryKey var username: String,
+    var phone: String,
     var email: String,
     var password: String,
     var confirmPassword: String,

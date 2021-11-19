@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="viewmodel"
+            type="com.nasser.appellas.viewmodels.AppViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -68,6 +70,7 @@
                 android:id="@+id/login_input_edit_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@{viewmodel.loginEmailInput}"
                 android:textColor="@color/white"
                 android:fontFamily="@font/poppins_semibold"
                 tools:text="josenasser2009@gmail.com" />
@@ -96,6 +99,7 @@
                 android:id="@+id/login_input_edit_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@{viewmodel.loginPassWordInput}"
                 android:textColor="@color/white"
                 android:fontFamily="@font/poppins_semibold" />
 
@@ -110,6 +114,7 @@
             android:fontFamily="@font/poppins_bold"
             android:textSize="@dimen/default_text_size"
             android:text="@string/login_button_text"
+            android:onClick="@{()-> viewmodel.login()}"
             android:textColor="#FFC58F"
             app:strokeColor="#FFC58F"
             app:strokeWidth="1dp"

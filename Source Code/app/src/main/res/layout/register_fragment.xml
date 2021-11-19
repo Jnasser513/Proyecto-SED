@@ -5,36 +5,39 @@
 
     <data>
 
+        <variable
+            name="viewmodel"
+            type="com.nasser.appellas.viewmodels.AppViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#1E1B30"
-        android:paddingEnd="@dimen/maximum_gap"
         android:paddingStart="@dimen/maximum_gap"
-        android:paddingTop="@dimen/maximum_gap">
+        android:paddingTop="@dimen/maximum_gap"
+        android:paddingEnd="@dimen/maximum_gap">
 
         <ImageView
             android:id="@+id/register_return_arrow"
             android:layout_width="35dp"
             android:layout_height="35dp"
+            android:contentDescription="@string/description_arrow_return"
             android:src="@drawable/ic_arrow"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:contentDescription="@string/description_arrow_return" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/register_text_tittle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_gap"
-            android:text="@string/register_text_tittle"
             android:fontFamily="@font/poppins_bold"
+            android:text="@string/register_text_tittle"
             android:textColor="@color/white"
             android:textSize="32sp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/register_return_arrow" />
 
         <TextView
@@ -42,146 +45,151 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="-8dp"
-            android:text="@string/register_description_tittle_text"
             android:fontFamily="@font/poppins_semibold"
+            android:text="@string/register_description_tittle_text"
             android:textColor="#787575"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/register_text_tittle" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/register_input_layout_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="65dp"
+            android:layout_marginTop="@dimen/maximum_gap"
             android:hint="@string/hint_input_name"
             android:textColorHint="#787575"
-            android:layout_marginTop="@dimen/maximum_gap"
+            app:boxCornerRadiusBottomEnd="@dimen/radius_input"
+            app:boxCornerRadiusBottomStart="@dimen/radius_input"
             app:boxCornerRadiusTopEnd="@dimen/radius_input"
             app:boxCornerRadiusTopStart="@dimen/radius_input"
-            app:boxCornerRadiusBottomStart="@dimen/radius_input"
-            app:boxCornerRadiusBottomEnd="@dimen/radius_input"
-            app:startIconDrawable="@drawable/ic_user"
-            app:startIconTint="@color/white"
             app:boxStrokeWidth="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/register_description_tittle_text"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconDrawable="@drawable/ic_user"
+            app:startIconTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_input_edit_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
                 android:fontFamily="@font/poppins_semibold"
+                android:text="@{viewmodel.registerNameInput}"
+                android:textColor="@color/white"
                 tools:text="Jose Roberto Nasser Sanchez" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/register_input_layout_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="65dp"
+            android:layout_marginTop="@dimen/input_gap"
             android:hint="@string/hint_input_email"
             android:textColorHint="#787575"
-            android:layout_marginTop="@dimen/input_gap"
+            app:boxCornerRadiusBottomEnd="@dimen/radius_input"
+            app:boxCornerRadiusBottomStart="@dimen/radius_input"
             app:boxCornerRadiusTopEnd="@dimen/radius_input"
             app:boxCornerRadiusTopStart="@dimen/radius_input"
-            app:boxCornerRadiusBottomStart="@dimen/radius_input"
-            app:boxCornerRadiusBottomEnd="@dimen/radius_input"
-            app:startIconDrawable="@drawable/ic_email"
-            app:startIconTint="@color/white"
             app:boxStrokeWidth="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/register_input_layout_name"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_input_edit_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:fontFamily="@font/poppins_semibold" />
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@{viewmodel.registerEmailInput}"
+                android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/register_input_layout_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="65dp"
+            android:layout_marginTop="@dimen/input_gap"
             android:hint="@string/hint_input_phone"
             android:textColorHint="#787575"
-            android:layout_marginTop="@dimen/input_gap"
+            app:boxCornerRadiusBottomEnd="@dimen/radius_input"
+            app:boxCornerRadiusBottomStart="@dimen/radius_input"
             app:boxCornerRadiusTopEnd="@dimen/radius_input"
             app:boxCornerRadiusTopStart="@dimen/radius_input"
-            app:boxCornerRadiusBottomStart="@dimen/radius_input"
-            app:boxCornerRadiusBottomEnd="@dimen/radius_input"
-            app:startIconDrawable="@drawable/ic_phone"
-            app:startIconTint="@color/white"
             app:boxStrokeWidth="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/register_input_layout_email"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconDrawable="@drawable/ic_phone"
+            app:startIconTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_input_edit_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:fontFamily="@font/poppins_semibold" />
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@{viewmodel.registerPhoneInput}"
+                android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/register_input_layout_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="65dp"
+            android:layout_marginTop="@dimen/input_gap"
             android:hint="@string/hint_input_password"
             android:textColorHint="#787575"
-            android:layout_marginTop="@dimen/input_gap"
+            app:boxCornerRadiusBottomEnd="@dimen/radius_input"
+            app:boxCornerRadiusBottomStart="@dimen/radius_input"
             app:boxCornerRadiusTopEnd="@dimen/radius_input"
             app:boxCornerRadiusTopStart="@dimen/radius_input"
-            app:boxCornerRadiusBottomStart="@dimen/radius_input"
-            app:boxCornerRadiusBottomEnd="@dimen/radius_input"
-            app:startIconDrawable="@drawable/ic_email"
-            app:startIconTint="@color/white"
             app:boxStrokeWidth="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/register_input_layout_phone"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_input_edit_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:fontFamily="@font/poppins_semibold" />
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@{viewmodel.registerPasswordInput}"
+                android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/register_input_layout_confirm_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="65dp"
+            android:layout_marginTop="@dimen/input_gap"
             android:hint="@string/hint_input_confirm_password"
             android:textColorHint="#787575"
-            android:layout_marginTop="@dimen/input_gap"
+            app:boxCornerRadiusBottomEnd="@dimen/radius_input"
+            app:boxCornerRadiusBottomStart="@dimen/radius_input"
             app:boxCornerRadiusTopEnd="@dimen/radius_input"
             app:boxCornerRadiusTopStart="@dimen/radius_input"
-            app:boxCornerRadiusBottomStart="@dimen/radius_input"
-            app:boxCornerRadiusBottomEnd="@dimen/radius_input"
-            app:startIconDrawable="@drawable/ic_email"
-            app:startIconTint="@color/white"
             app:boxStrokeWidth="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/register_input_layout_password"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_input_edit_confirm_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:fontFamily="@font/poppins_semibold" />
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@{viewmodel.registerConfirmInput}"
+                android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -189,31 +197,32 @@
             android:id="@+id/action_register"
             android:layout_width="220dp"
             android:layout_height="65dp"
-            android:backgroundTint="#1E1B30"
             android:layout_marginTop="30dp"
+            android:backgroundTint="#1E1B30"
             android:fontFamily="@font/poppins_bold"
-            android:textSize="@dimen/default_text_size"
+            android:onClick="@{()-> viewmodel.registerUser()}"
             android:text="@string/register_button_text"
             android:textColor="#FFC58F"
-            app:rippleColor="#FFC58F"
-            app:strokeColor="#FFC58F"
-            app:strokeWidth="1dp"
+            android:textSize="@dimen/default_text_size"
             app:cornerRadius="@dimen/button_radius"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/register_input_layout_confirm_password"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:rippleColor="#FFC58F"
+            app:strokeColor="#FFC58F"
+            app:strokeWidth="1dp" />
 
         <TextView
             android:id="@+id/register_have_accoun_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#787575"
-            android:fontFamily="@font/poppins_semibold"
             android:layout_marginStart="50dp"
             android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
             android:text="@string/register_have_account_text"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#787575"
             app:layout_constraintEnd_toStartOf="@+id/register_signin_text"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/action_register" />
 
 
@@ -222,12 +231,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
+            android:fontFamily="@font/poppins_bold"
             android:text="@string/login_signup_text"
             android:textColor="#FFC58F"
-            android:fontFamily="@font/poppins_bold"
-            app:layout_constraintTop_toTopOf="@id/register_have_accoun_text"
             app:layout_constraintBottom_toBottomOf="@id/register_have_accoun_text"
-            app:layout_constraintStart_toEndOf="@id/register_have_accoun_text" />
+            app:layout_constraintStart_toEndOf="@id/register_have_accoun_text"
+            app:layout_constraintTop_toTopOf="@id/register_have_accoun_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
