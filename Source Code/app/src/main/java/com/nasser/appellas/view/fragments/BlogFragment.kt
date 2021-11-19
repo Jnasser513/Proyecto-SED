@@ -1,14 +1,9 @@
-package com.nasser.appellas.fragments
+package com.nasser.appellas.view.fragments
 
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.*
-import android.widget.Toast
-import androidx.core.content.ContextCompat
-import androidx.core.graphics.drawable.DrawableCompat
-import androidx.core.graphics.toColor
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.nasser.appellas.R
 import com.nasser.appellas.databinding.BlogFragmentBinding
 
@@ -21,9 +16,7 @@ class BlogFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        super.onCreateView(inflater, container, savedInstanceState)
-        mBinding = BlogFragmentBinding.inflate(inflater, container, false)
-
+        mBinding = DataBindingUtil.inflate(inflater, R.layout.blog_fragment, container, false)
         return mBinding.root
     }
 

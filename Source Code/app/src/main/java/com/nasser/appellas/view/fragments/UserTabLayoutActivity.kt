@@ -1,12 +1,10 @@
-package com.nasser.appellas.fragments
+package com.nasser.appellas.view.fragments
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewpager.widget.ViewPager
-import com.google.android.material.tabs.TabLayout
 import com.nasser.appellas.R
 import com.nasser.appellas.databinding.BottomNavigationMenuBinding
-import com.nasser.appellas.fragments.adapters.UserViewPagerAdapter
+import com.nasser.appellas.view.adapters.UserViewPagerAdapter
 
 class UserTabLayoutActivity: AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.nasser.appellas.fragments.adapters
+package com.nasser.appellas.view.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

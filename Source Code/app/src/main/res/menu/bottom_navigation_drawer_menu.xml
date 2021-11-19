@@ -4,8 +4,31 @@
     tools:showIn="navigation_view">
     <group android:checkableBehavior="none">
         <item
+            android:id="@+id/home"
+            android:title="@string/bottom_menu_home_title">
+
+            <menu>
+                <item
+                    android:id="@+id/menu_blog"
+                    android:icon="@drawable/ic_blogging"
+                    android:title="@string/bottom_menu_blog_title"/>
+                <item
+                    android:id="@+id/menu_advisory"
+                    android:icon="@drawable/ic_consulta"
+                    android:title="@string/bottom_menu_advisory_title"/>
+                <item
+                    android:id="@+id/menu_informative_map"
+                    android:icon="@drawable/ic_mapa"
+                    android:title="@string/bottom_menu_map_title"/>
+                <item
+                    android:id="@+id/menu_informative_page"
+                    android:icon="@drawable/ic_informacion"
+                    android:title="@string/bottom_menu_informative_page_title"/>
+            </menu>
+        </item>
+        <item
             android:id="@+id/settings"
             android:icon="@drawable/ic_settings"
-            android:title="@string/bottom_menu_settings_title" />
+            android:title="@string/bottom_menu_profile_title" />
     </group>
 </menu>

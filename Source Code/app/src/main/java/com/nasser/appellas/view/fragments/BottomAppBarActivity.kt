@@ -1,4 +1,4 @@
-package com.nasser.appellas.fragments
+package com.nasser.appellas.view.fragments
 
 import android.os.Bundle
 import android.view.View
@@ -31,6 +31,12 @@ class BottomAppBarActivity: AppCompatActivity() {
 
         mBinding.bottomAppBar.setNavigationOnClickListener {
             bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+            mBinding.navigationView.visibility = View.VISIBLE
+            mBinding.bottomAppBar.setNavigationOnClickListener {
+                bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
+                mBinding.navigationView.visibility = View.GONE
+            }
+            return@setNavigationOnClickListener
         }
 
         mBinding.navigationView.setNavigationItemSelectedListener { menuItem ->
@@ -46,9 +52,6 @@ class BottomAppBarActivity: AppCompatActivity() {
             true
         }
 
-        mBinding.scrim1.setOnClickListener {
-            bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
-        }
 
         bottomSheetBehavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
             override fun onSlide(bottomSheet: View, slideOffset: Float) {

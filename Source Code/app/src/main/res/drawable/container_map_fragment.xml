@@ -5,10 +5,10 @@
             <solid
                 android:color="@color/secondary_color"/>
             <corners
-                android:topLeftRadius="@dimen/default_gap"
-                android:topRightRadius="@dimen/default_gap"
-                android:bottomLeftRadius="@dimen/default_gap"
-                android:bottomRightRadius="@dimen/default_gap"/>
+                android:topLeftRadius="@dimen/minimum_gap"
+                android:topRightRadius="@dimen/minimum_gap"
+                android:bottomLeftRadius="@dimen/minimum_gap"
+                android:bottomRightRadius="@dimen/minimum_gap"/>
         </shape>
     </item>
 </selector>

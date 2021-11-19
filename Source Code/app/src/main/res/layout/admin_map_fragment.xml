@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -58,20 +58,14 @@
             </com.google.android.material.card.MaterialCardView>
 
             <TextView
-                android:id="@+id/advisory_title"
-                android:layout_width="match_parent"
+                android:id="@+id/informative_map_title"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/maximum_gap"
-                android:layout_marginEnd="@dimen/maximum_gap"
-                android:layout_marginBottom="@dimen/default_gap"
+                android:layout_marginBottom="@dimen/minimum_gap"
                 android:elevation="20dp"
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
-                android:shadowColor="@color/primary_color"
-                android:shadowDx="10"
-                android:shadowDy="10"
-                android:shadowRadius="15"
-                android:text="@string/manage_accounts_title"
+                android:text="@string/admin_map_title"
                 android:textColor="@color/primary_color"
                 android:textSize="36sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -94,33 +88,26 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginStart="@dimen/minimum_gap"
-            android:layout_marginTop="@dimen/default_gap"
+            android:layout_marginTop="@dimen/medium_gap"
             android:layout_marginEnd="@dimen/minimum_gap"
-            android:layout_marginBottom="68dp"
+            android:layout_marginBottom="70dp"
             android:background="@drawable/container_map_fragment"
+            android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/header_container">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/accounts_recyclerview"
-                android:layout_marginStart="@dimen/minimum_gap"
-                android:layout_marginEnd="@dimen/minimum_gap"
-                android:layout_marginTop="@dimen/minimum_gap"
-                android:layout_marginBottom="@dimen/minimum_gap"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:listitem="@layout/account_item" />
+
 
         </LinearLayout>
 
         <include
-            android:id="@+id/admin_homepage_bootom_navigation_tab"
-            layout="@layout/bottom_navigation_menu" />
+            android:id="@+id/admin_bottom_tab_layout"
+            layout="@layout/admin_bottom_navigation_tab" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

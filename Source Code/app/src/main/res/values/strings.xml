@@ -78,4 +78,10 @@
     <string name="information_tab">Information</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="bottom_menu_home_title">Home</string>
+    <string name="bottom_menu_blog_title">Blog</string>
+    <string name="bottom_menu_advisory_title">Advisory</string>
+    <string name="bottom_menu_map_title">Informative Map</string>
+    <string name="bottom_menu_informative_page_title">Informative Page</string>
+    <string name="admin_map_title">Emergency Map</string>
 </resources>
