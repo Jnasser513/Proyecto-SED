@@ -2,11 +2,17 @@ package com.nasser.appellas.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.databinding.DataBindingUtil
 import com.nasser.appellas.R
+import com.nasser.appellas.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var mBinding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.homepage_fragment)
+        mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        setContentView(mBinding.root)
     }
 }

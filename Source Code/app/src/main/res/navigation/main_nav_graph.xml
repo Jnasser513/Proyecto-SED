@@ -1,6 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/loginFragment">
 
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.nasser.appellas.view.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.nasser.appellas.view.fragments.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/register_fragment">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.nasser.appellas.view.fragments.ChangePasswordFragment"
+        android:label="ChangePasswordFragment"
+        tools:layout="@layout/recovery_fragment">
+        <action
+            android:id="@+id/action_changePasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.nasser.appellas.view.fragments.HomePageFragment"
+        android:label="HomePageFragment"
+        tools:layout="@layout/homepage_fragment">
+        <action
+            android:id="@+id/action_homePageFragment_to_blogFragment"
+            app:destination="@id/blogFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_advisoryFragment"
+            app:destination="@id/advisoryFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_informativeMapFragment"
+            app:destination="@id/informativeMapFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blogFragment"
+        android:name="com.nasser.appellas.view.fragments.BlogFragment"
+        android:label="BlogFragment"
+        tools:layout="@layout/blog_fragment">
+        <action
+            android:id="@+id/action_blogFragment_to_createBlogFragment"
+            app:destination="@id/createBlogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/advisoryFragment"
+        android:name="com.nasser.appellas.view.fragments.AdvisoryFragment"
+        android:label="AdvisoryFragment"
+        tools:layout="@layout/advisory_fragment"/>
+    <fragment
+        android:id="@+id/informativeMapFragment"
+        android:name="com.nasser.appellas.view.fragments.InformativeMapFragment"
+        android:label="InformativeMapFragment"
+        tools:layout="@layout/informative_map_fragment"/>
+    <fragment
+        android:id="@+id/createBlogFragment"
+        android:name="com.nasser.appellas.view.fragments.CreateBlogFragment"
+        android:label="CreateBlogFragment"
+        tools:layout="@layout/create_blog_fragment"/>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.nasser.appellas.view.fragments.UserProfileFragment"
+        android:label="UserProfileFragment"
+        tools:layout="@layout/user_profile_fragment"/>
+    <fragment
+        android:id="@+id/adminHomePageFragment"
+        android:name="com.nasser.appellas.view.fragments.AdminHomePageFragment"
+        android:label="AdminHomePageFragment"
+        tools:layout="@layout/admin_homepage_fragment">
+        <action
+            android:id="@+id/action_adminHomePageFragment_to_manageAccountFragment"
+            app:destination="@id/manageAccountFragment" />
+        <action
+            android:id="@+id/action_adminHomePageFragment_to_adminMapFragment"
+            app:destination="@id/adminMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageAccountFragment"
+        android:name="com.nasser.appellas.view.fragments.ManageAccountFragment"
+        android:label="ManageAccountFragment"
+        tools:layout="@layout/manage_accounts_fragment"/>
+    <fragment
+        android:id="@+id/adminMapFragment"
+        android:name="com.nasser.appellas.view.fragments.AdminMapFragment"
+        android:label="AdminMapFragment"
+        tools:layout="@layout/admin_map_fragment"/>
 </navigation>
