@@ -22,4 +22,22 @@ class CreateBlogFragment: Fragment() {
         return mBinding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        mBinding.actionReturn.setOnClickListener { goBlog() }
+        mBinding.actionShare.setOnClickListener { goBlog() }
+    }
+
+    private fun goBlog() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, BlogFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    companion object {
+        fun newInstance() = CreateBlogFragment()
+    }
+
 }

@@ -22,4 +22,45 @@ class HomePageFragment: Fragment() {
         return mBinding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        mBinding.homepageCardViewBlog.setOnClickListener { goBlog() }
+        mBinding.homepageCardViewAdvisory.setOnClickListener { goAdvisory() }
+        mBinding.homepageCardViewMap.setOnClickListener { goInformativeMap() }
+        mBinding.homepageCardViewInformationPage.setOnClickListener { goInformativePage() }
+    }
+
+    private fun goInformativePage() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, InformationPageFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    private fun goInformativeMap() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, InformativeMapFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    private fun goAdvisory() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, AdvisoryFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    private fun goBlog() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, BlogFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    companion object{
+        fun newInstance() = HomePageFragment()
+    }
+
 }

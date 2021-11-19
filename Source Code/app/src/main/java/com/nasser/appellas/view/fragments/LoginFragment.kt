@@ -22,4 +22,45 @@ class LoginFragment: Fragment() {
         return mBinding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        mBinding.loginSignupText.setOnClickListener {
+            goRegister()
+        }
+
+        mBinding.loginForgotText.setOnClickListener {
+            goRecoveryPassword()
+        }
+
+        mBinding.actionLogin.setOnClickListener {
+            goHomePageFragment()
+        }
+    }
+
+    private fun goRegister() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, RegisterFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    private fun goRecoveryPassword() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, ChangePasswordFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    private fun goHomePageFragment() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, HomePageFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    companion object {
+        fun newInstance() = LoginFragment()
+    }
+
 }

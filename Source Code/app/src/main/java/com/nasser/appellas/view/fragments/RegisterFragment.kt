@@ -22,4 +22,23 @@ class RegisterFragment: Fragment() {
         return mBinding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        mBinding.actionRegister.setOnClickListener { goLogin() }
+        mBinding.registerSigninText.setOnClickListener { goLogin() }
+        mBinding.registerReturnArrow.setOnClickListener { goLogin() }
+    }
+
+    private fun goLogin() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, LoginFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    companion object {
+        fun newInstance() = RegisterFragment()
+    }
+
 }

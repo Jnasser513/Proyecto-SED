@@ -22,4 +22,21 @@ class AdvisoryFragment: Fragment() {
         return mBinding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        mBinding.actionReturn.setOnClickListener { goHomePage() }
+    }
+
+    private fun goHomePage() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, HomePageFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
+
+    companion object {
+        fun newInstance() = AdvisoryFragment()
+    }
+
 }

@@ -22,4 +22,8 @@ class InformationPageFragment: Fragment() {
         return mBinding.root
     }
 
+    companion object {
+        fun newInstance() = InformationPageFragment()
+    }
+
 }

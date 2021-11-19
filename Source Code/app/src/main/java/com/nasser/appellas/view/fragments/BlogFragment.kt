@@ -20,51 +20,29 @@ class BlogFragment: Fragment() {
         return mBinding.root
     }
 
-    /*private fun setUpNavigation() {
-        BottomNavigationView.OnNavigationItemSelectedListener { item ->
-            when(item.itemId) {
-                R.id.page_blog -> {
-                    /** Ir a pagina de Blogs **/
-                    DrawableCompat.setTint(item.icon, R.color.white.toInt())
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.page_advisory -> {
-                    /** Ir a pagina de asesoria **/
-                    DrawableCompat.setTint(item.icon, R.color.white.toInt())
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.page_map -> {
-                    /** Ir a pagina de mapa **/
-                    DrawableCompat.setTint(item.icon, R.color.white.toInt())
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.page_information -> {
-                    /** Ir a pagina de informacion **/
-                    DrawableCompat.setTint(item.icon, R.color.white.toInt())
-                    return@OnNavigationItemSelectedListener true
-                }
-                else -> {
-                    DrawableCompat.setTint(item.icon, R.color.primary_color.toInt())
-                    return@OnNavigationItemSelectedListener false
-                }
-            }
-        }
-    }*/
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-    /*
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.bottom_navigation_menu, menu)
+        mBinding.actionReturn.setOnClickListener { goHomePage() }
+        mBinding.floatingActionNew.setOnClickListener { goCreateBlog() }
+    }
 
-        for(i in 0 until menu.size()) {
-            var menuItem = menu.getItem(i)
+    private fun goCreateBlog() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, CreateBlogFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
 
-            val icon = menuItem.icon
-            if(icon != null){
-                DrawableCompat.setTint(icon, ContextCompat.getColor(requireContext(), R.color.primary_color))
-            }
-        }
+    private fun goHomePage() {
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.replace(android.R.id.content, HomePageFragment.newInstance())
+            ?.addToBackStack(null)
+            ?.commit()
+    }
 
-        return super.onCreateOptionsMenu(menu, inflater)
-    }*/
+    companion object {
+        fun newInstance() = BlogFragment()
+    }
 
 }
