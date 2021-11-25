@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="viewmodel"
+            type="com.nasser.appellas.viewmodels.AppViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,7 +14,7 @@
         android:layout_height="match_parent"
         tools:context=".view.MainActivity">
 
-        <fragment
+        <androidx.fragment.app.FragmentContainerView
             android:id="@+id/nav_host_fragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="0dp"
@@ -22,8 +24,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:navGraph="@navigation/main_nav_graph"
-            tools:ignore="FragmentTagUsage"/>
+            app:navGraph="@navigation/main_nav_graph"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

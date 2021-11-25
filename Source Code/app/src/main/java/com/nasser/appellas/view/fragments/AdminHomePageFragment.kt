@@ -22,4 +22,8 @@ class AdminHomePageFragment: Fragment() {
         return mBinding.root
     }
 
+    companion object {
+        fun newInstance() = AdminHomePageFragment()
+    }
+
 }
